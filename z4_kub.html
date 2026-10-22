@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta charset="utf-8">
+ <title>Teoria – Kubica</title>
+ <script>
+ function okno_zamknij() {
+   window.close()
+ }
+ </script>
+</head>
+<body>
+ <h2>Teoria JavaScript – Szymon Kubica</h2>
+
+ <p><b>1) Kiedy powstał JavaScript?</b><br>
+ JavaScript powstał w 1995 roku. W grudniu tego samego roku został zaimplementowany w przeglądarce Netscape Navigator.</p>
+
+ <p><b>2) Dlaczego jest to język skryptowy?</b><br>
+ Ponieważ jest językiem interpretowanym – nie wymaga kompilacji do kodu maszynowego, działa bezpośrednio w przeglądarce.</p>
+
+ <p><b>3) Gdzie jest wykonywany JS (klient lub serwer)?</b><br>
+ Tradycyjnie po stronie klienta (w przeglądarce), ale może być też wykonywany po stronie serwera dzięki Node.js.</p>
+
+ <p><b>4) Dlaczego JS to bezpieczne narzędzie?</b><br>
+ Ponieważ działa w tzw. sandboxie i ma ograniczony dostęp do zasobów komputera – nie może swobodnie odwoływać się do plików użytkownika.</p>
+
+ <p><b>5) Czy jest to język obiektowy, jeśli tak to dlaczego?</b><br>
+ Tak, ponieważ korzysta z definicji obiektów, metod i zdarzeń. Struktura obiektów w JS opiera się na DOM (Document Object Model).</p>
+
+ <p><b>6) Wymień zalety JS:</b><br>
+ Zaleta1 – Prosty do nauki i szybki start.<br>
+ Zaleta2 – Bardzo popularny, dużo przykładów i gotowych rozwiązań w Internecie.<br>
+ Zaleta3 – Uniwersalność – stosowany w stronach WWW, aplikacjach mobilnych, grach, serwerach.</p>
+
+ <p><b>7) Framework to:</b><br>
+ Zestaw bibliotek i narzędzi ułatwiających programowanie, np. React, Angular, Vue.</p>
+
+ <p><b>8) Do aplikacji mobilnych można użyć Framework?</b><br>
+ Tak, np. React Native czy Ionic – pozwalają tworzyć aplikacje mobilne na różne systemy.</p>
+
+ <p><b>9) Aplikacje responsywne to:</b><br>
+ Aplikacje, które dostosowują wygląd i układ do rozmiaru ekranu (telefon, tablet, komputer).</p>
+
+ <p><b>10) Kod:</b><br>
+ &lsaquo;input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"&rsaquo;<br>
+ Ten kod tworzy przycisk. Po kliknięciu uruchamia funkcję <i>WinOpen()</i>, która otwiera nową stronę.</p>
+
+ <p><b>11) Kod:</b><br>
+ window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");<br>
+ Ta instrukcja otwiera nowe okno przeglądarki o podanych parametrach.<br>
+ - toolbar=no → ukrywa pasek narzędzi<br>
+ - directories=no → ukrywa przyciski katalogów<br>
+ - menubar=no → ukrywa menu przeglądarki<br>
+ - height=280 → wysokość okna 280 pikseli<br>
+ - width=160 → szerokość okna 160 pikseli<br>
+ - top=200 → odsunięcie okna od góry ekranu<br>
+ - left=200 → odsunięcie okna od lewej strony ekranu</p>
+
+<b>12) Opisz następującą instrukcję window.close()</b><br>
+Instrukcja <i>window.close()</i> służy do zamykania bieżącego okna przeglądarki,
+w którym została uruchomiona.<br><br>
+
+================================================================================<br>
+<b>Gdy chcesz wyświetlić instrukcję, która nie powinna się wykonywać a tylko wyświetlać masz dwie możliwości:</b><br><br>
+
+<b>Pierwsza możliwość:</b><br>
+Zamiana znaków specjalnych:<br>
+znak &lsaquo; (czyli <) można zapisać jako <code>&amp;lsaquo;</code><br>
+znak &rsaquo; (czyli >) można zapisać jako <code>&amp;rsaquo;</code><br><br>
+
+<b>Druga możliwość:</b><br>
+Umieszczenie kodu wewnątrz znacznika &lsaquo;pre&rsaquo; ... &lsaquo;/pre&rsaquo;,
+co powoduje, że wyświetla się dokładnie tak jak wpisany, bez wykonywania.<br><br>
+
+<b>Przykład:</b><br>
+<pre>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Moja strona WWW</title>
+    <script type="text/javascript">
+        function onclickHandler() {
+            alert('Akapit został kliknięty');
+        }
+    </script>
+</head>
+<body>
+    <p onclick="onclickHandler();">Kliknij ten akapit,
+    a pojawi się okno dialogowe.</p>
+</body>
+</html>
+</pre>
+<br>
+ 
+ <br>
+ <input type="button" value="Zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>
