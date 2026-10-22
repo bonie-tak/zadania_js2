@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie5 - Szymon Kubica</title>
+    <script language="JavaScript">
+        function WinOpen_kubica_grafika1() {
+            let okno = window.open("", "grafika1","width=350,height=350,top=50,left=50");
+            okno.document.write(`
+                <html><body style="text-align:center;">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.LqX2j2ui5-xyk4LgA-da4QAAAA?rs=1&pid=ImgDetMain&o=7&rm=3.jpg" width="300"><br>
+                    <p style="color:red;">Blok żelaza</p>
+                </body></html>
+            `);
+        }
+
+        function WinOpen_kubica_grafika2() {
+            let okno = window.open("", "grafika2","width=350,height=350,top=100,left=450");
+            okno.document.write(`
+                <html><body style="text-align:center;">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.o228wLMU71noQnVdPlI9ygHaHa?rs=1&pid=ImgDetMain&o=7&rm=3.jpg" width="300"><br>
+                    <p style="color:green;">Ruda żelaza</p>
+                </body></html>
+            `);
+        }
+
+        function WinOpen_kubica_grafika3() {
+            let okno = window.open("", "grafika3","width=350,height=350,top=300,left=50");
+            okno.document.write(`
+                <html><body style="text-align:center;">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.-77OwpgKSR_6w8A8dJELGgHaHq?rs=1&pid=ImgDetMain&o=7&rm=3.jpg" width="300"><br>
+                    <p style="color:blue;">Blok ziemi</p>
+                </body></html>
+            `);
+        }
+
+        function WinOpen_kubica_grafika4() {
+            let okno = window.open("", "grafika4","width=350,height=350,top=300,left=450");
+            okno.document.write(`
+                <html><body style="text-align:center;">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.W_BwcNkl0GwrEOK9d0NXNwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3.jpg" width="300"><br>
+                    <p style="color:orange;">Blok magmy</p>
+                </body></html>
+            `);
+        }
+
+        function okno_zamknij_kubica() {
+            window.close();
+        }
+    </script>
+</head>
+<body style="text-align:center; font-family:Arial;">
+    <h2 style="color:blue;">Szymon Kubica klasa 3F nr 13</h2>
+
+    <p>Minecraftowe bloki:</p>
+    <button onclick="WinOpen_kubica_grafika1()">Grafika 1</button>
+    <button onclick="WinOpen_kubica_grafika2()">Grafika 2</button>
+    <button onclick="WinOpen_kubica_grafika3()">Grafika 3</button>
+    <button onclick="WinOpen_kubica_grafika4()">Grafika 4</button>
+    <br><br>
+    <button onclick="okno_zamknij_kubica()">Zamknij okno</button>
+</body>
+</html>
