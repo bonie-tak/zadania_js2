@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Kubica-Zadanie9</title>
+<script type="text/javascript">
+    function show_prompt() {
+        var name = prompt("Napisz imię:", "Imię Nazwisko");
+        if (name != null && name != "") {
+            document.write("Witaj " + name + "! Jak się masz?");
+        }
+    }
+</script>
+</head>
+<body>
+    <h2>Zadanie 9 – Prompt Box</h2>
+    <input type="button" onclick="show_prompt()" value="Pokaż Prompt Box">
+
+    <h3>Teoria:</h3>
+    <p>
+        <b>Prompt Box</b> używany jest, gdy <u>użytkownik ma coś wpisać</u>, np. swoje imię lub hasło.  
+        Po kliknięciu <b>OK</b> zwraca wpisaną wartość, a po <b>Cancel</b> zwraca <b>null</b>.  
+        Stosowany np. przy logowaniu lub pytaniu o dane.
+    </p>
+
+    <h3>Podstawowe operatory w JavaScript:</h3>
+    <p>
+        + dodawanie lub łączenie tekstu (konkatenacja)<br>
+        - odejmowanie<br>
+        * mnożenie<br>
+        / dzielenie<br>
+        ++ zwiększenie o 1<br>
+        -- zmniejszenie o 1<br>
+        % reszta z dzielenia<br>
+        = przypisanie wartości<br>
+        == porównanie wartości<br>
+        &lt; mniejsze od, &gt; większe od<br>
+        &lt;= mniejsze/równe, &gt;= większe/równe<br>
+        ! zaprzeczenie (negacja)<br>
+        && logiczne „i”, || logiczne „lub”<br>
+        +=, -=, *=, /=, %= skrócone zapisy działań
+    </p>
+</body>
+</html>
