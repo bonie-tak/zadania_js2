@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Kubica - Zadanie 15</title>
+<script>
+function rozkladEgipski() {
+    var wynik = "";
+
+    // pierwsze dane
+    var m1 = 3;
+    var u1a = 1/6;
+    var u1b = 1/6;
+    var suma1 = u1a + u1b;
+
+    wynik += "Dla m = " + m1 + "<br>";
+    wynik += "1/" + m1 + " = 1/6 + 1/6<br>";
+    wynik += "Sprawdzenie: 1/6 + 1/6 = " + suma1.toFixed(3) + "<br><br>";
+
+    // drugie dane
+    var m2 = 7;
+    var u2a = 1/14;
+    var u2b = 1/14;
+    var suma2 = u2a + u2b;
+
+    wynik += "Dla m = " + m2 + "<br>";
+    wynik += "1/" + m2 + " = 1/14 + 1/14<br>";
+    wynik += "Sprawdzenie: 1/14 + 1/14 = " + suma2.toFixed(3);
+
+    document.getElementById("wynik").innerHTML = wynik;
+}
+</script>
+</head>
+<body>
+<h2 style="color:red;">Zadanie 15 - Kubica</h2>
+<p><b>Temat:</b> Rozkład ułamka egipskiego na dwa takie same ułamki egipskie</p>
+
+<input type="button" value="Pokaż rozkłady" onclick="rozkladEgipski()">
+
+<div id="wynik" style="margin-top:20px; font-size:18px;"></div>
+</body>
+</html>
