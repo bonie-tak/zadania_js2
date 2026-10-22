@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Kubica - Zadanie 14</title>
+<script>
+function rozkladUlamek() {
+    // dane
+    var m = 4;
+
+    // obliczenia
+    var u1 = 1/6;
+    var u2 = 1/30;
+    var u3 = 1/20;
+
+    // suma
+    var suma = u1 + u2 + u3;
+
+    // wynik
+    document.getElementById("wynik").innerHTML =
+        "Dane: m = " + m + "<br>" +
+        "Rozkład ułamka 1/" + m + " na trzy ułamki egipskie:<br>" +
+        "1/" + m + " = 1/6 + 1/30 + 1/20<br><br>" +
+        "Sprawdzenie: 1/6 + 1/30 + 1/20 = " + suma.toFixed(3);
+}
+</script>
+</head>
+<body>
+<h2 style="color:red;">Zadanie 14 - Kubica</h2>
+<p><b>Temat:</b> Rozkład ułamka egipskiego na trzy ułamki egipskie</p>
+<p><b>Wskazówka:</b> Najpierw rozłóż na dwa ułamki, potem jeden z nich rozbij dalej.</p>
+
+<input type="button" value="Rozłóż 1/4" onclick="rozkladUlamek()">
+
+<div id="wynik" style="margin-top:20px; font-size:18px;"></div>
+</body>
+</html>
