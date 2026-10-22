@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Kod - Kubica Zadanie 14</title>
+</head>
+<body>
+<h2 style="color:red;">Zadanie 14 - Kod (Kubica)</h2>
+<pre>
+&lt;script&gt;
+function rozkladUlamek() {
+    // dane
+    var m = 4;
+
+    // obliczenia
+    var u1 = 1/6;
+    var u2 = 1/30;
+    var u3 = 1/20;
+
+    // suma
+    var suma = u1 + u2 + u3;
+
+    // wynik
+    document.getElementById("wynik").innerHTML =
+        "Dane: m = " + m + "&lt;br&gt;" +
+        "Rozkład ułamka 1/" + m + " na trzy ułamki egipskie:&lt;br&gt;" +
+        "1/" + m + " = 1/6 + 1/30 + 1/20&lt;br&gt;&lt;br&gt;" +
+        "Sprawdzenie: 1/6 + 1/30 + 1/20 = " + suma.toFixed(3);
+}
+&lt;/script&gt;
+</pre>
+</body>
+</html>
