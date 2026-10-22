@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Kubica-Zadanie11-KOD</title>
+</head>
+<body>
+<h2>Kod programu – Zadanie 11</h2>
+<textarea cols="90" rows="24">
+//Kubica 3F 19.10.2025
+// Zadanie 11
+<html>
+<body>
+<div style="color:green; font-size:40px;">
+<script type="text/javascript">
+var D1_kub = prompt("Podaj pierwszy dzień (D1):", "");
+var D2_kub = prompt("Podaj drugi dzień (D2):", "");
+var sekund;
+var a = parseFloat(D1_kub);
+var b = parseFloat(D2_kub);
+sekund = (a - b) * 24 * 60 * 60;
+document.write("Ilość sekund między dniami " + a + " i " + b + " = " + sekund + " sekund<br>");
+function okno_zamknij_kub() {
+    window.close();
+}
+</script>
+</div>
+<input type="button" value="Zamknij okno" onclick="okno_zamknij_kub()">
+</body>
+</html>
+</textarea>
+</body>
+</html>
