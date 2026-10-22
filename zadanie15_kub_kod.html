@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Kod - Kubica Zadanie 15</title>
+</head>
+<body>
+<h2 style="color:red;">Zadanie 15 - Kod (Kubica)</h2>
+<pre>
+&lt;script&gt;
+function rozkladEgipski() {
+    var wynik = "";
+
+    // pierwsze dane
+    var m1 = 3;
+    var u1a = 1/6;
+    var u1b = 1/6;
+    var suma1 = u1a + u1b;
+
+    wynik += "Dla m = " + m1 + "&lt;br&gt;";
+    wynik += "1/" + m1 + " = 1/6 + 1/6&lt;br&gt;";
+    wynik += "Sprawdzenie: 1/6 + 1/6 = " + suma1.toFixed(3) + "&lt;br&gt;&lt;br&gt;";
+
+    // drugie dane
+    var m2 = 7;
+    var u2a = 1/14;
+    var u2b = 1/14;
+    var suma2 = u2a + u2b;
+
+    wynik += "Dla m = " + m2 + "&lt;br&gt;";
+    wynik += "1/" + m2 + " = 1/14 + 1/14&lt;br&gt;";
+    wynik += "Sprawdzenie: 1/14 + 1/14 = " + suma2.toFixed(3);
+
+    document.getElementById("wynik").innerHTML = wynik;
+}
+&lt;/script&gt;
+</pre>
+</body>
+</html>
