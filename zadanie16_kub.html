@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Kubica - Zadanie 16</title>
+<script>
+function oblicz_wyrazenie() {
+    var A = parseFloat(prompt("Podaj pierwszą liczbę A="));
+    var B = parseFloat(prompt("Podaj drugą liczbę B="));
+
+    document.write("<span style='color:navy; font-size:22px;'>Wczytane liczby: A=" + A + " B=" + B + "</span><br><br>");
+
+    // obliczenia (A + B)^3 = A^3 + 3A^2B + 3AB^2 + B^3
+    var A3 = A*A*A;
+    var B3 = B*B*B;
+    var trzyA2B = 3*(A*A)*B;
+    var trzyAB2 = 3*A*(B*B);
+    var wynik = A3 + trzyA2B + trzyAB2 + B3;
+
+    var wzor = "(" + A + " + " + B + ")^3 = " +
+               A + "^3 + 3*(" + A + ")^2*(" + B + ") + 3*(" + A + ")*(" + B + ")^2 + " + B + "^3";
+
+    var rozpisane = "= " + A3 + " + " + trzyA2B + " + " + trzyAB2 + " + " + B3 + " = " + wynik;
+
+    document.write("<span style='color:navy; font-size:28px; display:block; width:100%;'>" + wzor + "</span>");
+    document.write("<span style='color:navy; font-size:28px; display:block; width:100%;'>" + rozpisane + "</span>");
+}
+</script>
+</head>
+<body>
+<h2 style="color:red;">Zadanie 16 - Kubica</h2>
+<p><b>Temat:</b> Sterowanie wydrukami – obliczanie (A + B)<sup>3</sup> z użyciem document.write i prompt</p>
+
+<input type="button" value="Uruchom obliczenia" onclick="oblicz_wyrazenie()">
+</body>
+</html>
